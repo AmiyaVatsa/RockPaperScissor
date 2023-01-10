@@ -57,7 +57,8 @@ function game()
 {
     for (let i = 0; i < 5; i++)
     {
-        let ch = prompt("Rock? Paper? or Scissor").toLowerCase();
+        let ab = prompt("Rock? Paper? or Scissor");
+        let ch = ab.toLowerCase();
         let playSelect = 0;
         if (ch === "rock")
         {
@@ -72,7 +73,10 @@ function game()
             playSelect = 3;
         }
         compSelect = getComputerChoice();
-        let result = playRound(compSelect, playSelect);
+        const result = playRound(compSelect, playSelect);
         console.log(result);
     }
 }
+
+
+game();
