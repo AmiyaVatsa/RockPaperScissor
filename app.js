@@ -53,3 +53,26 @@ function playRound(compSelect, playSelect)
     }
 }
 
+function game()
+{
+    for (let i = 0; i < 5; i++)
+    {
+        let ch = prompt("Rock? Paper? or Scissor").toLowerCase();
+        let playSelect = 0;
+        if (ch === "rock")
+        {
+            playSelect = 1;
+        }
+        else if(ch === "paper")
+        {
+            playSelect = 2;
+        }
+        else
+        {
+            playSelect = 3;
+        }
+        compSelect = getComputerChoice();
+        let result = playRound(compSelect, playSelect);
+        console.log(result);
+    }
+}
