@@ -60,11 +60,11 @@ function game()
         let ab = prompt("Rock? Paper? or Scissor");
         let ch = ab.toLowerCase();
         let playSelect = 0;
-        if (ch === "rock")
+        if (ch == "rock")
         {
             playSelect = 1;
         }
-        else if(ch === "paper")
+        else if(ch == "paper")
         {
             playSelect = 2;
         }
